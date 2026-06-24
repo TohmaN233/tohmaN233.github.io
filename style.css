@@ -59,6 +59,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
 }
@@ -120,6 +121,17 @@ h2 {
   gap: 18px;
 }
 
+.project-section + .project-section {
+  margin-top: 34px;
+}
+
+.group-title {
+  margin-bottom: 14px;
+  color: var(--accent-strong);
+  font-size: 1.02rem;
+  letter-spacing: 0;
+}
+
 .project-card {
   display: flex;
   min-height: 280px;
@@ -147,7 +159,7 @@ h2 {
   font-weight: 700;
 }
 
-.project-card h3 {
+.project-card h4 {
   margin-bottom: 12px;
   font-size: 1.35rem;
   line-height: 1.25;
