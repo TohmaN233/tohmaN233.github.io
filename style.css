@@ -177,6 +177,17 @@ h2 {
   color: var(--accent);
 }
 
+.project-card .card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-card .card-links a {
+  margin-top: 0;
+}
+
 .project-card a::after {
   content: "->";
   margin-left: 8px;
@@ -225,4 +236,119 @@ h2 {
   .project-card {
     min-height: 240px;
   }
+}
+
+.project-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.project-page .back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-page .back-link::before {
+  content: "<-";
+  margin-right: 8px;
+}
+
+.project-page h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  margin-bottom: 24px;
+}
+
+.project-page .meta-line {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.project-page .meta-line a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-page .lang-section {
+  margin-bottom: 56px;
+}
+
+.project-page .lang-section:last-child {
+  margin-bottom: 0;
+}
+
+.project-page .lang-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 4px 12px;
+  background: var(--tag-bg);
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.project-page h2 {
+  font-size: 1.6rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.project-page p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.project-page ul, .project-page ol {
+  margin: 16px 0;
+  padding-left: 24px;
+  line-height: 1.7;
+}
+
+.project-page li {
+  margin-bottom: 8px;
+}
+
+.project-page code {
+  padding: 2px 6px;
+  background: var(--tag-bg);
+  color: var(--accent-strong);
+  font-size: 0.9em;
+  border-radius: 3px;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace;
+}
+
+.project-page pre {
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.project-page pre code {
+  padding: 0;
+  background: none;
+}
+
+.project-page .video-embed {
+  margin: 24px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.project-page .video-embed iframe {
+  width: 100%;
+  height: 460px;
+  border: none;
 }
